@@ -1,4 +1,4 @@
-# Literature Review and Research Discussions
+# Literature Review and Research
 Kevin Kim, Willie Neiswanger
 ## Reviews
 - Organized by date and meeting number
@@ -8,3 +8,7 @@ Kevin Kim, Willie Neiswanger
 ## Research Discussion
 - Ideas on potential work to be done
 - High-level project ideas are bolded until further expanded
+
+## Initial Experimentation
+- Could range from basic implementations to high-level project schematics
+- Experimentation folder labled "[]_practice"
