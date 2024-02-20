@@ -1,5 +1,5 @@
 # Literature Review and Research
-Kevin Kim, Willie Neiswanger
+Advised by Willie Neiswanger
 ## Reviews
 - Organized by date and meeting number
 - Each review references paper
