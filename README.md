@@ -1,5 +1,5 @@
 # Literature Review and Research
-Advised by Willie Neiswanger
+Advised by Prof. Willie Neiswanger
 ## Reviews
 - Organized by date and meeting number
 - Each review references paper
