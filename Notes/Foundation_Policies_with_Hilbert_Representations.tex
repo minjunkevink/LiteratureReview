@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\title{Foundation Policies with Hilbert Representations}
+
+\begin{document}
+\maketitle
+
+\section*{Idea}
+
+- Pre-training generalist policies, offline data (long-horizon, zero-shot). Similar to next token prediction (NLP). \\
+- Differs from previous work: lacks behavioral diversity, broader task generalization (TODO: comparison to METRA? Discovers diverse skills through temporal distance-based abstraction but online).
+
+\section{Hilbert Foundation Policies (HILPs)}
+\subsection{Hilbert Representations}
+Distance-preserving mapping $\varphi: S \to Z$. Temporally similar states $\to$ spatially similar latent states. Abstracts state space while preserving global relationships. Trains $\varphi$ to preserve temporal distance:
+\[
+d^*(s, g) = \|\varphi(s) - \varphi(g)\|
+\]
+Policy $\pi(a | s, z)$ spans latent space with directional movements, capturing diverse, long-horizon behaviors from unlabeled data.
+
+\subsection{Policy Training}
+Train state-spanning latent-conditioned policy $\pi(a | s, z)$. Intrinsic reward function based on inner product:
+\[
+r(s, z, s') = \langle \varphi(s') - \varphi(s), z \rangle
+\]
+$z$ sampled from unit sphere in latent space. Optimize policy to maximize reward, capturing diverse behaviors.
+
+
+\section{Notes (so far)}
+\subsection{Questions}
+\textit{Note that some of the questions I have for now are high-level and could be answered as I re-read this paper (and reference other papers)} \\
+- Can we come up with a VLM that generate temporal-dist preserving representations? (how is this different from "finetuning" the VLM @Jesse) \\
+\end{document}
+
