@@ -4,6 +4,7 @@
 
 - [Foundation Policies with Hilbert Representations](https://arxiv.org/pdf/2402.15567)
 - [METRA: Scalable Unsupervised RL with Metric-Aware Abstraction](https://arxiv.org/pdf/2310.08887)
+- https://arxiv.org/pdf/2402.17135
 
 ### RL (personal research/exploration)
 
